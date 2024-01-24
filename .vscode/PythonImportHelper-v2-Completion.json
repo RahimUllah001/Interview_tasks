@@ -1,0 +1,469 @@
+[
+    {
+        "label": "urlparse",
+        "importPath": "urllib.parse",
+        "description": "urllib.parse",
+        "isExtraImport": true,
+        "detail": "urllib.parse",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "string",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "string",
+        "description": "string",
+        "detail": "string",
+        "documentation": {}
+    },
+    {
+        "label": "l",
+        "kind": 5,
+        "importPath": "even",
+        "description": "even",
+        "peekOfCode": "l = [x for x in a if x % 2 == 0]\nprint(l)\n# when user give the input\ngiven_number = input(\"enter an nnumberwith a space: \")\nnumbers = [int(num) for num in given_number.split()]        #given_number.split() ==> Split the input string into a list of string And int(num) for num ==> this will convert string to int\neven_number = [num for num in numbers if num % 2 == 0]\nprint(even_number)\n#  i will use try except for invalid input1",
+        "detail": "even",
+        "documentation": {}
+    },
+    {
+        "label": "given_number",
+        "kind": 5,
+        "importPath": "even",
+        "description": "even",
+        "peekOfCode": "given_number = input(\"enter an nnumberwith a space: \")\nnumbers = [int(num) for num in given_number.split()]        #given_number.split() ==> Split the input string into a list of string And int(num) for num ==> this will convert string to int\neven_number = [num for num in numbers if num % 2 == 0]\nprint(even_number)\n#  i will use try except for invalid input1",
+        "detail": "even",
+        "documentation": {}
+    },
+    {
+        "label": "numbers",
+        "kind": 5,
+        "importPath": "even",
+        "description": "even",
+        "peekOfCode": "numbers = [int(num) for num in given_number.split()]        #given_number.split() ==> Split the input string into a list of string And int(num) for num ==> this will convert string to int\neven_number = [num for num in numbers if num % 2 == 0]\nprint(even_number)\n#  i will use try except for invalid input1",
+        "detail": "even",
+        "documentation": {}
+    },
+    {
+        "label": "even_number",
+        "kind": 5,
+        "importPath": "even",
+        "description": "even",
+        "peekOfCode": "even_number = [num for num in numbers if num % 2 == 0]\nprint(even_number)\n#  i will use try except for invalid input1",
+        "detail": "even",
+        "documentation": {}
+    },
+    {
+        "label": "fiboo",
+        "kind": 2,
+        "importPath": "Even_fibpnanci_sum",
+        "description": "Even_fibpnanci_sum",
+        "peekOfCode": "def fiboo(limit):\n    while True:\n        fib_next = fib_sequence[-1] + fib_sequence[-2]\n        if fib_next > limit:\n            break\n        fib_sequence.append(fib_next)\n    even_sum =sum( [x for x in fib_sequence if x%2 == 0])\n    print(even_sum)#required ans\nfiboo(60)\nprint(fib_sequence)",
+        "detail": "Even_fibpnanci_sum",
+        "documentation": {}
+    },
+    {
+        "label": "fib_sequence",
+        "kind": 5,
+        "importPath": "Even_fibpnanci_sum",
+        "description": "Even_fibpnanci_sum",
+        "peekOfCode": "fib_sequence = [0,1]\ndef fiboo(limit):\n    while True:\n        fib_next = fib_sequence[-1] + fib_sequence[-2]\n        if fib_next > limit:\n            break\n        fib_sequence.append(fib_next)\n    even_sum =sum( [x for x in fib_sequence if x%2 == 0])\n    print(even_sum)#required ans\nfiboo(60)",
+        "detail": "Even_fibpnanci_sum",
+        "documentation": {}
+    },
+    {
+        "label": "fact",
+        "kind": 2,
+        "importPath": "fact_using_recussion",
+        "description": "fact_using_recussion",
+        "peekOfCode": "def fact(num):\n    if num == 0 or num == 1:\n        return 1\n    else:\n        return num * fact(num - 1)\nprint(fact(3))",
+        "detail": "fact_using_recussion",
+        "documentation": {}
+    },
+    {
+        "label": "'''num",
+        "kind": 5,
+        "importPath": "fact_using_recussion",
+        "description": "fact_using_recussion",
+        "peekOfCode": "'''num = 5\nr= 1\nfor i in range(num):\n    r = r * num\n    num  = num -1\nprint(r)\n'''\n# using recursive function\ndef fact(num):\n    if num == 0 or num == 1:",
+        "detail": "fact_using_recussion",
+        "documentation": {}
+    },
+    {
+        "label": "is_palindrome",
+        "kind": 2,
+        "importPath": "palidrome_checking",
+        "description": "palidrome_checking",
+        "peekOfCode": "def is_palindrome(s):\n    return s == s[::-1]\nword = input(\"enter your word to check: \").lower()\nif is_palindrome(word):\n    print(f\"{word } is palindrome\")\nelse:\n    print(f\"{word } is not palindrome\")",
+        "detail": "palidrome_checking",
+        "documentation": {}
+    },
+    {
+        "label": "str",
+        "kind": 5,
+        "importPath": "palidrome_checking",
+        "description": "palidrome_checking",
+        "peekOfCode": "str = \"racecar\"\nj = 0\nfor i in range(len(str)):\n    j = j-1\n    if str[i] == str[j]:\n        print(\" same\")\n    else:\n        print(\"n ot same\")\n'''\n# Efficient method",
+        "detail": "palidrome_checking",
+        "documentation": {}
+    },
+    {
+        "label": "j",
+        "kind": 5,
+        "importPath": "palidrome_checking",
+        "description": "palidrome_checking",
+        "peekOfCode": "j = 0\nfor i in range(len(str)):\n    j = j-1\n    if str[i] == str[j]:\n        print(\" same\")\n    else:\n        print(\"n ot same\")\n'''\n# Efficient method\ndef is_palindrome(s):",
+        "detail": "palidrome_checking",
+        "documentation": {}
+    },
+    {
+        "label": "word",
+        "kind": 5,
+        "importPath": "palidrome_checking",
+        "description": "palidrome_checking",
+        "peekOfCode": "word = input(\"enter your word to check: \").lower()\nif is_palindrome(word):\n    print(f\"{word } is palindrome\")\nelse:\n    print(f\"{word } is not palindrome\")",
+        "detail": "palidrome_checking",
+        "documentation": {}
+    },
+    {
+        "label": "num",
+        "kind": 5,
+        "importPath": "prime_checker",
+        "description": "prime_checker",
+        "peekOfCode": "num = int(input(\"enter yr number: \"))\nis_prime = True\nif num < 2:\n    is_prime = False\nelse:\n    for i in range(2, int(num**0.5) + 1 ):\n        if num % i == 0:\n            is_prime = False\n            break\n        else:",
+        "detail": "prime_checker",
+        "documentation": {}
+    },
+    {
+        "label": "is_prime",
+        "kind": 5,
+        "importPath": "prime_checker",
+        "description": "prime_checker",
+        "peekOfCode": "is_prime = True\nif num < 2:\n    is_prime = False\nelse:\n    for i in range(2, int(num**0.5) + 1 ):\n        if num % i == 0:\n            is_prime = False\n            break\n        else:\n            is_prime = True",
+        "detail": "prime_checker",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "swap",
+        "description": "swap",
+        "peekOfCode": "a = 5\nb = 10\na = a + b\nb = a - b\na = a - b\nprint(a,b)",
+        "detail": "swap",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "swap",
+        "description": "swap",
+        "peekOfCode": "b = 10\na = a + b\nb = a - b\na = a - b\nprint(a,b)",
+        "detail": "swap",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "swap",
+        "description": "swap",
+        "peekOfCode": "a = a + b\nb = a - b\na = a - b\nprint(a,b)",
+        "detail": "swap",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "swap",
+        "description": "swap",
+        "peekOfCode": "b = a - b\na = a - b\nprint(a,b)",
+        "detail": "swap",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "swap",
+        "description": "swap",
+        "peekOfCode": "a = a - b\nprint(a,b)",
+        "detail": "swap",
+        "documentation": {}
+    },
+    {
+        "label": "fibo",
+        "kind": 2,
+        "importPath": "task_10",
+        "description": "task_10",
+        "peekOfCode": "def fibo(limit):\n    f = [0,1]\n    for i in range(limit - 2):\n        f_next = f[-1] + f[-2]\n        f.append(f_next)\n    print(f)    \nfibo(20)",
+        "detail": "task_10",
+        "documentation": {}
+    },
+    {
+        "label": "sum_multiples_of_7",
+        "kind": 5,
+        "importPath": "task_11",
+        "description": "task_11",
+        "peekOfCode": "sum_multiples_of_7 = 0\nfor number in range(1, 101):\n    if number % 7 == 0:\n        sum_multiples_of_7 += number\nprint(f\"The sum of all multiples of 7 from 1 to 100 is: {sum_multiples_of_7}\")",
+        "detail": "task_11",
+        "documentation": {}
+    },
+    {
+        "label": "is_valid_url",
+        "kind": 2,
+        "importPath": "task_12",
+        "description": "task_12",
+        "peekOfCode": "def is_valid_url(url):\n    try:\n        result  = urlparse(url)     # result is an object which save url scheme i.e httpor https and its netlock that is domain and path etc\n        return all([result.scheme, result.netloc])\n    except ValueError:\n        return False\nurl_to_check = \"https://www.example.com\"\nif is_valid_url(url_to_check):\n    print(f\"{url_to_check} is valid\")\nelse:",
+        "detail": "task_12",
+        "documentation": {}
+    },
+    {
+        "label": "url_to_check",
+        "kind": 5,
+        "importPath": "task_12",
+        "description": "task_12",
+        "peekOfCode": "url_to_check = \"https://www.example.com\"\nif is_valid_url(url_to_check):\n    print(f\"{url_to_check} is valid\")\nelse:\n    print(f\"{url_to_check} is not valid\")",
+        "detail": "task_12",
+        "documentation": {}
+    },
+    {
+        "label": "prime_number",
+        "kind": 2,
+        "importPath": "task_13",
+        "description": "task_13",
+        "peekOfCode": "def prime_number(limit):\n    for i in range(2,limit + 1):\n        is_prime = True\n        j = 2\n        while j < i and i != 2:\n            if i % j == 0:\n                is_prime = False\n                break\n            else:\n                j = j + 1",
+        "detail": "task_13",
+        "documentation": {}
+    },
+    {
+        "label": "generate_primes",
+        "kind": 2,
+        "importPath": "task_13",
+        "description": "task_13",
+        "peekOfCode": "def generate_primes(limit):\n    primes = []\n    for num in range(2, limit + 1):\n        is_prime = all(num % i != 0 for i in range(2, int(num**0.5) + 1))\n        if is_prime:\n            primes.append(num)\n    return primes\n# Example usage:\nlimit = 50\nprime_numbers = generate_primes(limit)",
+        "detail": "task_13",
+        "documentation": {}
+    },
+    {
+        "label": "limit",
+        "kind": 5,
+        "importPath": "task_13",
+        "description": "task_13",
+        "peekOfCode": "limit = 50\nprime_numbers = generate_primes(limit)\nprint(f\"Prime numbers up to {limit}: {prime_numbers}\")",
+        "detail": "task_13",
+        "documentation": {}
+    },
+    {
+        "label": "prime_numbers",
+        "kind": 5,
+        "importPath": "task_13",
+        "description": "task_13",
+        "peekOfCode": "prime_numbers = generate_primes(limit)\nprint(f\"Prime numbers up to {limit}: {prime_numbers}\")",
+        "detail": "task_13",
+        "documentation": {}
+    },
+    {
+        "label": "num",
+        "kind": 5,
+        "importPath": "task_14",
+        "description": "task_14",
+        "peekOfCode": "num = 5\nr= 1\nfor i in range(num):\n    r = r * num\n    num  = num -1\nprint(r)",
+        "detail": "task_14",
+        "documentation": {}
+    },
+    {
+        "label": "count_vowels",
+        "kind": 2,
+        "importPath": "task_15",
+        "description": "task_15",
+        "peekOfCode": "def count_vowels(word):\n    count = 0\n    for i in word.lower():\n        if i in \"aeiou\":\n            count = count + 1\n    print(count)            \ngiven_string = input(\"enter yr string: \")\ncount_vowels(given_string)",
+        "detail": "task_15",
+        "documentation": {}
+    },
+    {
+        "label": "given_string",
+        "kind": 5,
+        "importPath": "task_15",
+        "description": "task_15",
+        "peekOfCode": "given_string = input(\"enter yr string: \")\ncount_vowels(given_string)",
+        "detail": "task_15",
+        "documentation": {}
+    },
+    {
+        "label": "str1",
+        "kind": 5,
+        "importPath": "task_16",
+        "description": "task_16",
+        "peekOfCode": "str1 = \"abcdef\"\nstr2 = \"xyzabcd\"",
+        "detail": "task_16",
+        "documentation": {}
+    },
+    {
+        "label": "str2",
+        "kind": 5,
+        "importPath": "task_16",
+        "description": "task_16",
+        "peekOfCode": "str2 = \"xyzabcd\"",
+        "detail": "task_16",
+        "documentation": {}
+    },
+    {
+        "label": "find_replace_word",
+        "kind": 2,
+        "importPath": "task_17",
+        "description": "task_17",
+        "peekOfCode": "def find_replace_word(file_path,old_word,new_word):\n    with open(file_path, \"r\") as file:\n        content = file.read()\n    new_content = content.replace(old_word,new_word)\n    with open(file_path, \"w\") as file:\n        file.write(new_content)\nfile_path = \"task_17.txt\"\nold_word = \"apple\"\nnew_word = \"mango\"\nprint(f'The word \"{old_word}\" has been replaced with \"{new_word}\" in {file_path}.')",
+        "detail": "task_17",
+        "documentation": {}
+    },
+    {
+        "label": "file_path",
+        "kind": 5,
+        "importPath": "task_17",
+        "description": "task_17",
+        "peekOfCode": "file_path = \"task_17.txt\"\nold_word = \"apple\"\nnew_word = \"mango\"\nprint(f'The word \"{old_word}\" has been replaced with \"{new_word}\" in {file_path}.')\nfind_replace_word(file_path,old_word,new_word)",
+        "detail": "task_17",
+        "documentation": {}
+    },
+    {
+        "label": "old_word",
+        "kind": 5,
+        "importPath": "task_17",
+        "description": "task_17",
+        "peekOfCode": "old_word = \"apple\"\nnew_word = \"mango\"\nprint(f'The word \"{old_word}\" has been replaced with \"{new_word}\" in {file_path}.')\nfind_replace_word(file_path,old_word,new_word)",
+        "detail": "task_17",
+        "documentation": {}
+    },
+    {
+        "label": "new_word",
+        "kind": 5,
+        "importPath": "task_17",
+        "description": "task_17",
+        "peekOfCode": "new_word = \"mango\"\nprint(f'The word \"{old_word}\" has been replaced with \"{new_word}\" in {file_path}.')\nfind_replace_word(file_path,old_word,new_word)",
+        "detail": "task_17",
+        "documentation": {}
+    },
+    {
+        "label": "lcm_of",
+        "kind": 2,
+        "importPath": "task_18",
+        "description": "task_18",
+        "peekOfCode": "def lcm_of(x,y):\n    def gcd(a,b):\n        while b:\n            a, b = b, a % b\n        return a\n    return abs(x * y) // gcd(x, y)\na = 12000\nb = 18000\nreslut  = lcm_of(a, b)\nprint(reslut)",
+        "detail": "task_18",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "task_18",
+        "description": "task_18",
+        "peekOfCode": "a = 12000\nb = 18000\nreslut  = lcm_of(a, b)\nprint(reslut)",
+        "detail": "task_18",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "task_18",
+        "description": "task_18",
+        "peekOfCode": "b = 18000\nreslut  = lcm_of(a, b)\nprint(reslut)",
+        "detail": "task_18",
+        "documentation": {}
+    },
+    {
+        "label": "generate_password",
+        "kind": 2,
+        "importPath": "task_19",
+        "description": "task_19",
+        "peekOfCode": "def generate_password(length = 8):\n    caracters = string.ascii_letters + string.digits +string.punctuation\n    password = ''.join(random.choice(caracters) for _ in range(length) )\n    return password\nrando_pasword = generate_password()\nprint(f\"{rando_pasword} is random generated password\")",
+        "detail": "task_19",
+        "documentation": {}
+    },
+    {
+        "label": "rando_pasword",
+        "kind": 5,
+        "importPath": "task_19",
+        "description": "task_19",
+        "peekOfCode": "rando_pasword = generate_password()\nprint(f\"{rando_pasword} is random generated password\")",
+        "detail": "task_19",
+        "documentation": {}
+    },
+    {
+        "label": "is_pangram",
+        "kind": 2,
+        "importPath": "task_20",
+        "description": "task_20",
+        "peekOfCode": "def is_pangram(g_string):\n    unique_alpha = set(c.lower() for c in g_string if c.isalpha()) #list comprehension on set\n    return set('abcdefghijklmnopqrstuvwxyz') == unique_alpha\ninput_string = \"The quick brown fox jumps over the lazy dog\"\nresult = is_pangram(input_string)\nif result:\n    print(f\"{input_string} is pangram\")\nelse:    \n    print(f\"{input_string} is not pangram\")",
+        "detail": "task_20",
+        "documentation": {}
+    },
+    {
+        "label": "input_string",
+        "kind": 5,
+        "importPath": "task_20",
+        "description": "task_20",
+        "peekOfCode": "input_string = \"The quick brown fox jumps over the lazy dog\"\nresult = is_pangram(input_string)\nif result:\n    print(f\"{input_string} is pangram\")\nelse:    \n    print(f\"{input_string} is not pangram\")",
+        "detail": "task_20",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "task_20",
+        "description": "task_20",
+        "peekOfCode": "result = is_pangram(input_string)\nif result:\n    print(f\"{input_string} is pangram\")\nelse:    \n    print(f\"{input_string} is not pangram\")",
+        "detail": "task_20",
+        "documentation": {}
+    },
+    {
+        "label": "shape",
+        "kind": 5,
+        "importPath": "task_7",
+        "description": "task_7",
+        "peekOfCode": "shape = input(\"Area of which quantit u want ot calculate:\")\nif shape == \"circle\":\n    radius = int(input(\"plz enter the radius of the circle: \"))\n    Area = (22/7) * radius * radius\n    print(Area)\nelif shape == \"triangle\":\n    height = int(input(\"plz enter the hieght of triangle: \"))\n    base = int(input(\"plz enter the base of triangle: \"))\n    Area_of_triangle = 1/2 * height * base\n    print(Area_of_triangle)",
+        "detail": "task_7",
+        "documentation": {}
+    },
+    {
+        "label": "list_to_reversed",
+        "kind": 2,
+        "importPath": "task_8",
+        "description": "task_8",
+        "peekOfCode": "def list_to_reversed(my_list):\n    start = 0\n    end = len(my_list) - 1\n    while start <= end:\n        my_list[start] , my_list[end] = my_list[end],my_list[start]\n        start += 1\n        end -= 1\n    return my_list\ngiven_list = [1,2,3,4,5]\nr1 = list_to_reversed(given_list)",
+        "detail": "task_8",
+        "documentation": {}
+    },
+    {
+        "label": "given_list",
+        "kind": 5,
+        "importPath": "task_8",
+        "description": "task_8",
+        "peekOfCode": "given_list = [1,2,3,4,5]\nr1 = list_to_reversed(given_list)\nprint(r1)",
+        "detail": "task_8",
+        "documentation": {}
+    },
+    {
+        "label": "r1",
+        "kind": 5,
+        "importPath": "task_8",
+        "description": "task_8",
+        "peekOfCode": "r1 = list_to_reversed(given_list)\nprint(r1)",
+        "detail": "task_8",
+        "documentation": {}
+    },
+    {
+        "label": "text",
+        "kind": 5,
+        "importPath": "task_9",
+        "description": "task_9",
+        "peekOfCode": "text = open('Interview_Tasks\\sample.txt','r')\nd =dict()\n# remove extra spaces\nfor line in text:\n    line = line.strip()         # remove leading spaces and new line character\n    line = line.lower()\n    words = line.split(\" \")         # convert the lines into the words\n    for word in words:\n        if word in d:\n            d[word] = d[word] + 1",
+        "detail": "task_9",
+        "documentation": {}
+    }
+]

@@ -1,0 +1,1 @@
+This is an example text document. Replace "mango" with "orange" in this document.
